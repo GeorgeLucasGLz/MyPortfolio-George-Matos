@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carroussel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Portfólio George Matos</title>
+    <link rel="icon" type="image/png" href="src/icon.webp" />
+
+
+</head>
+
+
+<body onload="loading()">
+
+    <div class="box-load">
+        <div class="pre">
+
+        </div>
+        <p>Portfólio George Matos
+        </p>
+    </div>
+
+    <div class="mascara-contact" onclick="desligarMascara()">
+    </div>
+
+    <div class="contact-me">
+
+        <form action="https://formcarry.com/s/EHnAia3Yb9A" method="POST" enctype="multipart/form-data">
+            <p>Seu Nome</p>
+            <input type="text" placeholder="Nome" id="name-form" name="Nome" autocomplete="off">
+            <p>Número</p>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx" id="number-form" name="Número" onkeyup="handlePhone(event)"
+                maxlength="15" autocomplete="off">
+            <p>Informações sobre o Pedido</p>
+            <textarea placeholder="Digite aqui" name="Área de texto" autocomplete="off"></textarea>
+            <button type="submit" id="btnContact">Enviar</button>
+
+        </form>
+
+    </div>
+    <main>
+
+        <nav>
+
+            <ul class="nav-links">
+
+                <li class="links">
+                    <a href="#" style="--vlr:1">Início</a>
+                </li>
+
+                <li class="links" id="link2">
+                    <a href="#" style="--vlr:3">Projetos</a>
+                </li>
+
+                <li class="links" id="link1">
+                    <a href="#" style="--vlr:2">Habilidades</a>
+                </li>
+                <li class="links" id="link3">
+                    <a href="#" style="--vlr:4">Contatos</a>
+                </li>
+            </ul>
+
+            <button class="btn" id="btn-nav">Contrate-me</button>
+
+        </nav>
+
+        <header class="container">
+            <div class="description">
+                <span class="blur"></span>
+                <span class="blur"></span>
+
+                <span class="span-description">
+                    CRIE SEU SITE COM QUEM SABE
+                </span>
+                <h1>Olá, eu sou <span class="name">George Matos</span>, <br><span class="frontend-text">Frontend
+                        Developer</span></h1>
+                <p><strong>Você quer um site rápido, bonito e funcional para o seu negócio?</strong>
+                </p>
+                <p>Sou um desenvolvedor front-end freelancer especializado em criar experiências web modernas e
+                    funcionais. Com domínio de HTML, CSS, JavaScript e React, estou sempre aprimorando minhas
+                    habilidades para entregar soluções que fazem a diferença. Vamos conversar sobre como posso agregar
+                    valor ao seu próximo projeto?</p>
+
+                <button class="btn" id="start">Começar</button>
+            </div>
+
+            <div class="image-box">
+                <img src="src/profile.webp">
+            </div>
+
+        </header>
+
+
+
+        <div class="projects-carroussel">
+
+            <div class="text-section">
+                <h1>Principais Projetos</h1>
+                <button class="btn" id="projects-btn">
+                    <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank">Entrar em
+                        Contato</a></button>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide">
+                        <a href="https://academia-gm-thai.netlify.app" target="_blank">
+                            <img src="./src/gmThai.webp" />
+                            <div class="title">
+                                <span>Academia</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <a href="https://conectaimoveisconceito.com.br" target="_blank">
+                            <img src="./src/imobiliaria.webp" />
+                            <div class="title">
+                                <span>Imobiliária</span>
+                            </div>
+                        </a>
+                    </div>
+
+                 
+
+                    <div class="swiper-slide">
+                        <a href="https://academia-viva.vercel.app" target="_blank">
+                            <img src="./src/academia-viva.webp" />
+                            <div class="title">
+                                <span>VSL Academia Viva</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://metodoaaplicado.com/metodo-7-dias/" target="_blank">
+                            <img src="./src/desafio-7.webp" />
+                            <div class="title">
+                                <span>VSL Desafio 7 Dias</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+                    <div class="swiper-slide">
+                        <a href="  https://metodoaaplicado.com/workshop-autocura/" target="_blank">
+                            <img src="./src/workshop-cura.webp" />
+                            <div class="title">
+                                <span>VSL WorkShop AutoCura</span>
+                            </div>
+                        </a>
+                    </div>
+
+                  
+
+                    <div class="swiper-slide">
+                        <a href="https://tkinovacoes.com.br" target="_blank">
+                            <img src="./src/tkinovacoes.webp" />
+                            <div class="title">
+                                <span>Agência de Eventos</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://freelings.com.br" target="_blank">
+                            <img src="./src/freelings.webp" />
+                            <div class="title">
+                                <span>Freelings Company</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/pet-shop/" target="_blank">
+                            <img src="./src/petShop.webp" />
+                            <div class="title">
+                                <span>Pet Shop</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/loginPage/" target="_blank"">
+                        <img src=" ./src/loginPage.webp" />
+                        <div class="title">
+                            <span>Login Page</span>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://react-burger-ciro.vercel.app" target="_blank">
+                            <img src="./src/ecommerce.webp" />
+                            <div class="title">
+                                <span>Burger Ecommerce</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://jsm-construcoes.vercel.app" target="_blank">
+                            <img src="./src/construcao.webp" />
+                            <div class="title">
+                                <span>Loja de construção</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <a href="https://renovarcorretora.com.br" target="_blank">
+                            <img src="./src/corretora.webp" />
+                            <div class="title">
+                                <span>Corretora de Seguros</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/Barbearia-Project/" target="_blank">
+                            <img src="./src/barberShop.webp" />
+                            <div class="title">
+                                <span>Barbearia</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/almaMusical/" target="_blank">
+                            <img src="./src/album-player.webp" />
+                            <div class="title">
+                                <span>Album Player</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://natuvix.vercel.app" target="_blank">
+                            <img src="./src/cafe.webp" />
+                            <div class="title">
+                                <span>Cafeteria</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/cantinho-da-dani/" target="_blank">
+                            <img src="./src/boloPage.webp" />
+                            <div class="title">
+                                <span>Confeitaria</span>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <!-- <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/george-lucas-previsao-do-tempo/" target="_blank">
+                            <img src="./src/weather.webp" />
+                            <div class="title">
+                                <span>Previsão do Tempo</span>
+                            </div>
+
+                        </a>
+                    </div> -->
+
+
+
+                    <div class="swiper-slide">
+                        <a href="https://reflexologia-y-spa-nec.netlify.app" target="_blank">
+                            <img src="./src/spa.webp" />
+                            <div class="title">
+                                <span>Salão de SPA</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <!-- <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/george-lucas-pizzaria-javascript/" target="_blank">
+                            <img src="./src/pizzaria.webp" />
+                            <div class="title">
+                                <span>Pizzaria</span>
+                            </div>
+
+                        </a>
+                    </div> -->
+
+
+                    <div class="swiper-slide">
+                        <a href="https://conversor-de-moedas-api.netlify.app" target="_blank">
+                            <img src="./src/convertMoney.webp" />
+                            <div class="title">
+                                <span>Conversor de Moedas</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="https://georgelucasglz.github.io/listagem-cavaleiros-do-zodiaco/" target="_blank">
+                            <img src="./src/ss.webp" />
+                            <div class="title">
+                                <span>Listagem de Personagens</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="skills-box">
+
+            <h1>HABILIDADES</h1>
+
+            <ul id="skill-list">
+
+                <div class="hidden">
+                    <li class="card-skill" id="html-card">
+
+                        <i class="ri-html5-line" id="icons"></i>
+                        <h2>HTML</h2>
+                        <p class="card-p">Estruturação de conteúdo web usando elementos de marcação HTML,
+                            como tags e atributos, para construir interfaces e layouts funcionais.</p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="css-card">
+
+                        <i class="ri-css3-fill" id="icons"></i>
+                        <h2>CSS</h2>
+                        <p class="card-p">Criação de layouts atraentes e responsivos, controle do posicionamento,
+                            das cores, das fontes e de outros aspectos visuais dos elementos HTML.</p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="js-card">
+
+                        <i class="ri-javascript-line" id="icons"></i>
+                        <h2>JavaScript</h2>
+                        <p class="card-p">Manipulação do HTML, resposta a eventos, validação de formulários,
+                            criação de animações e funcionalidades complexas para uma experiência de usuário
+                            envolvente.
+                        </p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="react-card">
+
+                        <i class="ri-reactjs-line" id="icons"></i>
+                        <h2>React.js</h2>
+                        <p class="card-p">Manipulação eficiente do DOM virtual, gerenciamento de estado e
+                            componentes
+                            reutilizáveis. Formulários interativos,
+                            animações fluidas e experiência de usuário envolvente.</p>
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="wordpress-card">
+
+                        <i class="ri-wordpress-line" id="icons"></i>
+                        <h2>WordPress</h2>
+                        <p class="card-p">Manipulação de servidores web, resposta a solicitações de eventos,
+                            desenvolvimento de APIs e aplicativos
+                            escaláveis para proporcionar uma experiência de usuário dinâmica e interativa.</p>
+
+                    </li>
+                </div>
+
+                <div class="hidden">
+                    <li class="card-skill" id="node-card">
+
+                        <i class="ri-nodejs-line" id="icons"></i>
+                        <h2>Node.js</h2>
+                        <p class="card-p">Manipulação de servidores web, resposta a solicitações de eventos,
+                            desenvolvimento de APIs e aplicativos
+                            escaláveis para proporcionar uma experiência de usuário dinâmica e interativa.</p>
+
+                    </li>
+                </div>
+
+            </ul>
+
+
+        </div>
+
+
+
+        </div>
+
+        <div class="zap-icon">
+            <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank"><i
+                    class="ri-whatsapp-line"></i></a>
+        </div>
+
+        <footer class="footer-container">
+            <span class="blurFooter"></span>
+
+            <h4>Midias Sociais</h4>
+            <div class="socials">
+                <a href="https://api.whatsapp.com/send?phone=5585992406549" target="_blank"><i
+                        class="ri-whatsapp-line"></i></a>
+                <a href="https://www.instagram.com/dev_glz/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/in/george-matos/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
+                <a href="https://github.com/GeorgeLucasGLz" target="_blank"><i class="ri-github-fill"></i></a>
+
+            </div>
+
+            <div id="copy">Copyright © 2024 George Matos. All Rights Reserved.</div>
+
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./projects.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+
+</html>
