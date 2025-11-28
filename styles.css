@@ -445,16 +445,6 @@ nav {
 }
 
 
-.teste-video {
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.2;
-
-    position: absolute;
-}
-
 .blurFooter {
     position: absolute;
     box-shadow: 0 0 200px 50px rgb(177, 0, 162);
@@ -510,7 +500,7 @@ nav {
     background-image: linear-gradient(to right bottom, #7cc5d9, #57a4c6, #3983b1, #27639a, #24427f);
 }
 
-#wordpress-card {
+#wordpress-card{
     background-image: linear-gradient(to bottom, #000000, #191919, #2a2a2a, #3d3d3d, #515151);
 }
 
@@ -579,7 +569,6 @@ nav {
     text-shadow: 0 0 4px white;
     font-size: 45px;
     text-transform: uppercase;
-    margin-top: 2em;
 }
 
 .text-section button {
@@ -650,9 +639,9 @@ nav {
 @media screen and (min-width: 0px) and (max-width : 1100px) {
 
     .blur {
-        display: none;
+       display: none;
     }
-
+    
     .blurFooter {
         display: none;
     }
